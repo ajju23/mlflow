@@ -39,4 +39,4 @@ with mlflow.start_run():
     mlflow.log_metric('MSE', mean_squared_error(y_test, y_pred))
 
     # Logging Model
-    mlflow.sklearn.save_model(lr,'Regression Model')
+    mlflow.sklearn.log_model(lr,'Regression Model')
